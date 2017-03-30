@@ -1,2 +1,3 @@
 # AlinaHaieva.github.io
-psd to html
+My works psd to html:
+AlinaHaieva.github.io/barbershop
