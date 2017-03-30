@@ -2,4 +2,4 @@
 
 ### My works psd to html:
 
-#### [first work - barberhop](AlinaHaieva.github.io/barbershop)
+#### [First work - barberhop.](http://AlinaHaieva.github.io/barbershop)
