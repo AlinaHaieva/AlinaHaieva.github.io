@@ -4,4 +4,4 @@
 
 #### [Barberhop](http://AlinaHaieva.github.io/barbershop)
 #### [Courses A+](https://alinahaieva.github.io/A+)
-#### [Redisigned main page of courses A+] (https://alinahaieva.github.io/RedisignedA+)
+#### [Redisigned main page of courses A+](https://alinahaieva.github.io/RedisignedA+)
