@@ -2,5 +2,6 @@
 
 ### My works psd to html:
 
-#### [First work - barberhop.](http://AlinaHaieva.github.io/barbershop)
-#### [Second work - A+.](https://alinahaieva.github.io/A+/)
+#### [Barberhop](http://AlinaHaieva.github.io/barbershop)
+#### [Courses A+](https://alinahaieva.github.io/A+)
+#### [Redisigned main page of courses A+] (https://alinahaieva.github.io/RedisignedA+)
