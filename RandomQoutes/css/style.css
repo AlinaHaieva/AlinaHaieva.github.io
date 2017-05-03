@@ -64,6 +64,7 @@ li{
   color: peru;
   background-color: blanchedalmond;
   border-color: bisque;
+  outline: none;  
 }
 
 .custom-box{
