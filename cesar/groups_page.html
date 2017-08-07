@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Groups page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>CESAR</h1>
+        <img id="profile_picture" src="img/profile_picture.png">
+    </header>
+
+    <main class="container clearfix">
+        <div class="left-column">
+            <img class="add" src="img/add.png" title="Add group">
+            <div class="pagination">
+                <a href="#"><img src="img/prev_pagination.png"></a>
+                <a href="#" class="page_numbers">2/</a>
+                <a href="#" class="page_numbers">5</a>
+                <a href="#"><img src="img/next_pagination.png"></a>
+            </div>
+            <div class="group_blocks">
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group selected_group"><span>119PHP</span></div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+                <div class="group">119PHP</div>
+            </div>
+            <button class="my_groups">My groups</button>
+            <img class="filter" src="img/filter.png">
+
+        </div>
+
+        <div class="main-area">
+            <span class="group_location">Group Location</span>
+            <span class="group_name">Group Name</span>
+            
+            <img class="group_edit_cogwheel" src="img/cogwheel.png" title="Edit group">
+            
+            <div class="content_toggle">
+                <div class="toggle_group_info" title="Group info"></div><div class="toggle_group_st_list" title="Group student list"></div><div class="toggle_group_schedule" title="Group schedule"></div><div class="toggle_group_notifications" title="Group notifications"></div>
+            </div>
+
+            <div class="group_coordination">
+                <table>
+                    <caption>Group coordination:</caption>
+                    <tr>
+                        <th></th>
+                        <th></th
+                    </tr>
+                    <tr>
+                        <td>Teacher</td>
+                        <td class="table_data_italic">Teacher name</td>
+                    </tr>
+                    <tr>
+                        <td>Expert</td>
+                        <td class="table_data_italic">Expert name</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="group_info">
+                <table>
+                    <caption>Group info:</caption>
+                    <tr>
+                        <th></th>
+                        <th></th
+                    </tr>
+                    <tr>
+                        <td>Date start:</td>
+                        <td>dd/mm/yy</td>
+                    </tr>
+                    <tr>
+                        <td>Date finish:</td>
+                        <td>dd/mm/yy</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="group_stages">
+                <span class="group_stages_title">Stage: </span><span class="group_exect_stage">group stage</span>
+            </div>
+        </div>
+
+        <div class="right-column">
+            
+        </div>
+    </main>
+
+    <div id="profile_block" class="profile_block">
+        <img class="cogwheel_picture" src="img/cogwheel.png">
+        <img class="user_picture" src="img/profile_picture.png">
+        <p class="user_name">User Name</p>
+        <p class="user_surname">User Surname</p>
+        <p class="user_role">User role</p>
+        <img class="logout" src="img/logout.png">
+    </div>
+
+    <footer>
+        <h1>CESAR</h1>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    
+    $(document).ready(function(){
+        $('#profile_picture').click(function() {
+            $('#profile_block').addClass("active");
+            $("#profile_block").mouseleave(function() {
+                $('#profile_block').removeClass("active");
+            });
+        });
+    });
+
+    </script>
+</body>
+</html>
