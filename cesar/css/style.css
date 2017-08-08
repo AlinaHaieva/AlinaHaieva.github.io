@@ -1,6 +1,5 @@
 body {
-    min-width: 1000px;
-    height: 100%;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "Times New Roman", sans-serif;
@@ -55,10 +54,11 @@ h2 {
 .right-column {
     width: 20%;
     min-height: 600px;
-    float: left;
+    display: inline-block;
     border: 5px solid #c4c5d8; 
     border-radius: 2%;
     position: relative;
+    vertical-align: top;
 }
 
 .right-column {
@@ -71,7 +71,7 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
     width: 65%;
-    float: left;
+    display: inline-block;
     border: 5px solid #c4c5d8; 
     border-radius: 3%;
     min-height: 500px;
@@ -236,8 +236,8 @@ header img {
 
 .group_blocks {
     max-height: 460px;
-    width: 260px;
-    margin: 20px;
+    min-width: 260px;
+    margin: 10px;
     margin-top: 60px;
     overflow: hidden;
 }
@@ -250,7 +250,7 @@ header img {
     width: 90px;
     background-color: #3c78b5;
     text-align: center;
-    float: left;
+    display: inline-block;
 }
 
 .group_blocks .group:nth-child(2n) {

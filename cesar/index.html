@@ -30,16 +30,17 @@
     </main>
 
     <div class="login">
-        <form id="login-form" action="" method="post">
+        <form id="login-form" onsubmit="return validateForm()" action="" method="post">
+            <p class="errorLoginForm"></p>
             <label>Login
                 <input type="text" id="login" onkeydown="keyPressed(event)" name="login">
             </label>
             <br>
             <label>Password
-            <input type="password" id="password" onkeydown="keyPressed(event)" name="password">
-            </label>
+            <input type="password" id="password" onkeydown="keyPressed(event)" name="password" required>
+            </label><span id="invalidPassword"></span>
             <br>
-            <input type="submit" value="">
+            <input type="submit" value="" required>
         </form>
     </div>
 
@@ -60,6 +61,28 @@
         function submitForm() {
             document.getElementById("login-form").submit();
         }
+
+        // validation
+
+        function validateForm() {
+            var loginField = document.getElementById("login").value;
+            var passwordField = document.getElementById("password").value;
+
+            if (!loginField.match(/^[a-zA-Z]+$/g)) {
+                alert("Login field must be filled with letters only");
+                return false;
+            } else if (loginField.length < 4 || loginField.length > 10) {
+                alert("Login field length must be between 4 and 10 character");
+                return false;
+            } else if (passwordField.length < 4 || passwordField.length > 10) {
+                alert("Password field length must be between 4 and 10 character");
+                return false;
+            }  else if (!passwordField.match(/^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/)) {
+                alert("Password field must be filled only with numbers, letters and special characters");
+                return false;
+            }
+        }
+
 
     </script>
 
