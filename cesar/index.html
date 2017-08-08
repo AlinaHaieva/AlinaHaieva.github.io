@@ -30,6 +30,7 @@
     </main>
 
     <div class="login">
+        
         <form id="login-form" onsubmit="return validateForm()" action="" method="post">
             <p class="errorLoginForm"></p>
             <label>Login
@@ -67,21 +68,27 @@
         function validateForm() {
             var loginField = document.getElementById("login").value;
             var passwordField = document.getElementById("password").value;
+            var errorFormLogin = document.querySelector(".errorLoginForm");
+            var errorText = "Incorrect login or password. Please, try again."
 
             if (!loginField.match(/^[a-zA-Z]+$/g)) {
-                alert("Login field must be filled with letters only");
+                errorFormLogin.innerHTML = errorText;
                 return false;
             } else if (loginField.length < 4 || loginField.length > 10) {
-                alert("Login field length must be between 4 and 10 character");
+                errorFormLogin.innerHTML = errorText;
                 return false;
             } else if (passwordField.length < 4 || passwordField.length > 10) {
-                alert("Password field length must be between 4 and 10 character");
+                errorFormLogin.innerHTML = errorText;
                 return false;
             }  else if (!passwordField.match(/^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/)) {
-                alert("Password field must be filled only with numbers, letters and special characters");
+                errorFormLogin.innerHTML = errorText;
                 return false;
             }
         }
+
+        
+        
+        
 
 
     </script>

@@ -102,6 +102,13 @@ h2 {
     width: 320px;
 }
 
+.login p {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    font-size: 18px;
+}
+
 label {
     font-family: "Times New Roman", sans-serif;
     font-size: 26px;
